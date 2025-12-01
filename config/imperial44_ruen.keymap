@@ -248,9 +248,9 @@
 
         en {
             bindings = <
-&kp ESC   &kp Q        &kp W        &kp E         &kp R         &kp T                                 &kp Y  &kp U          &kp I         &kp O        &kp P                &none
-&kp TAB   &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G                                 &kp H  &hmr RSHFT J   &hmr RCTRL K  &hmr LALT L  &hmr RGUI SEMICOLON  &none
-&kp CAPS  &kp Z        &kp X        &kp C         &kp V         &kp B  &none              &none       &kp N  &kp M          &none         &none        &none                &none
+&kp ESC   &kp Q        &kp W        &kp E         &kp R         &kp T                                 &kp Y  &kp U          &kp I         &kp O        &kp P     &none
+&kp TAB   &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G                                 &kp H  &hmr RSHFT J   &hmr RCTRL K  &hmr LALT L  &kp RGUI  &none
+&kp CAPS  &kp Z        &kp X        &kp C         &kp V         &kp B  &none              &none       &kp N  &kp M          &none         &none        &none     &none
                                                   &kp LGUI      &mo 2  &mt LCTRL SPACE    &kp RETURN  &mo 4  &kp BACKSPACE
             >;
 
