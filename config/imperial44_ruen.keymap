@@ -34,7 +34,7 @@
 
         left_double {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <15 16>;
+            key-positions = <19 20>;
             layers = <0 2>;
         };
 
@@ -58,31 +58,31 @@
 
         r_one {
             bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <19 20>;
+            key-positions = <16 15>;
             layers = <0 2>;
         };
 
         r_low {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <7 8>;
+            key-positions = <34 33>;
             layers = <0 2>;
         };
 
         l_minus {
             bindings = <&kp MINUS>;
-            key-positions = <4 3>;
+            key-positions = <28 27>;
             layers = <0 2>;
         };
 
         l_tt {
             bindings = <&kp COLON>;
-            key-positions = <27 28>;
+            key-positions = <8 7>;
             layers = <0 2>;
         };
 
         r_t {
             bindings = <&kp SEMI>;
-            key-positions = <33 34>;
+            key-positions = <4 3>;
             layers = <0 2>;
         };
 
@@ -106,19 +106,19 @@
 
         l_r_tt {
             bindings = <&kp RU_DOUBLE_QUOTES>;
-            key-positions = <15 16>;
+            key-positions = <19 20>;
             layers = <1 3>;
         };
 
         l_r_mi {
             bindings = <&kp RU_MINUS>;
-            key-positions = <3 4>;
+            key-positions = <28 27>;
             layers = <1 3>;
         };
 
         l_r_toddot {
             bindings = <&kp RU_COLON>;
-            key-positions = <27 28>;
+            key-positions = <7 8>;
             layers = <1 3>;
         };
 
@@ -142,19 +142,19 @@
 
         r_ru_low {
             bindings = <&kp RU_UNDERSCORE>;
-            key-positions = <7 8>;
+            key-positions = <34 33>;
             layers = <1 3>;
         };
 
         r_ru_to_dot {
             bindings = <&kp RU_SEMICOLON>;
-            key-positions = <33 34>;
+            key-positions = <4 3>;
             layers = <1 3>;
         };
 
         r_ru_sq {
             bindings = <&en SQT>;
-            key-positions = <19 20>;
+            key-positions = <16 15>;
             layers = <1 3>;
         };
     };
@@ -272,10 +272,10 @@
 
         sym_en {
             bindings = <
-&none  &kp N1       &kp N2     &kp N3      &kp N4           &kp N5                             &kp N6            &kp N7        &kp N8         &kp N9     &kp N0    &none
-&none  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT      &kp FSLH                           &kp NUBS          &kp CARET     &kp AMPERSAND  &kp ASTRK  &kp PIPE  &none
-&none  &none        &kp GRAVE  &kp TILDE   &kp EXCLAMATION  &kp LESS_THAN  &none    &none      &kp GREATER_THAN  &kp PLUS      &kp EQUAL      &none      &none     &none
-                                           &mo 5            &none          &none    &kp COMMA  &kp DOT           &kp QUESTION
+&none  &kp N1    &kp N2       &kp N3     &kp N4         &kp N5                                &kp N6     &kp N7         &kp N8     &kp N9     &kp N0    &none
+&none  &kp EXCL  &kp AT_SIGN  &kp POUND  &kp DOLLAR     &kp PERCENT                           &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp EQUAL  &kp PLUS  &none
+&none  &none     &kp GRAVE    &kp TILDE  &kp LESS_THAN  &kp GREATER_THAN  &none    &none      &kp FSLH   &kp NUBS       &kp PIPE   &none      &none     &none
+                                         &mo 5          &none             &none    &kp COMMA  &kp DOT    &kp QUESTION
             >;
 
             display-name = "Symbols_En";
@@ -284,10 +284,10 @@
         sym_ru {
             display-name = "Symbols_Ru";
             bindings = <
-&none  &kp N1       &kp N2     &kp N3      &kp N4              &kp N5                                &kp N6            &kp N7           &kp N8         &kp N9       &kp N0    &none
-&none  &en AT_SIGN  &en POUND  &en DOLLAR  &kp RU_PERCENT      &kp RU_SLASH                          &kp RU_BACKSLASH  &en CARET        &en AMPERSAND  &kp RU_STAR  &en PIPE  &none
-&none  &none        &en GRAVE  &en TILDE   &kp RU_EXCLAMATION  &en LESS_THAN  &none    &none         &en GREATER_THAN  &kp RU_PLUS      &kp RU_EQUAL   &none        &none     &none
-                                           &mo 5               &none          &none    &kp RU_COMMA  &kp RU_DOT        &kp RU_QUESTION
+&none  &kp N1              &kp N2       &kp N3     &kp N4         &kp N5                                   &kp N6        &kp N7            &kp N8           &kp N9        &kp N0       &none
+&none  &kp RU_EXCLAMATION  &en AT_SIGN  &en HASH   &en DOLLAR     &kp RU_PERCENT                           &en CARET     &en AMPERSAND     &kp RU_ASTERISK  &kp RU_EQUAL  &kp RU_PLUS  &none
+&none  &none               &en GRAVE    &en TILDE  &en LESS_THAN  &en GREATER_THAN  &none    &none         &kp RU_SLASH  &kp RU_BACKSLASH  &en PIPE         &none         &none        &none
+                                                   &mo 5          &none             &none    &kp RU_COMMA  &kp RU_DOT    &kp RU_QUESTION
             >;
         };
 
