@@ -248,10 +248,10 @@
 
         en {
             bindings = <
-&kp ESC   &kp Q        &kp W        &kp E         &kp R        &kp T                                 &kp Y  &kp U          &kp I         &kp O        &kp P     &none
-&kp TAB   &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LGUI F  &kp G                                 &kp H  &hmr RSHFT J   &hmr RCTRL K  &hmr LALT L  &kp RGUI  &none
-&kp CAPS  &kp Z        &kp X        &kp C         &kp V        &kp B  &none              &none       &kp N  &kp M          &none         &none        &none     &none
-                                                  &kp LGUI     &mo 2  &mt LCTRL SPACE    &kp RETURN  &mo 4  &kp BACKSPACE
+&kp ESC   &kp Q          &kp W                &kp E        &kp R        &kp T                                 &kp Y  &kp U          &kp I        &kp O                 &kp P       &none
+&kp TAB   &hml LSHIFT A  &hml LEFT_CONTROL S  &hml LALT D  &hml LGUI F  &kp G                                 &kp H  &hmr RGUI J    &hmr RALT K  &hmr RIGHT_CONTROL L  &kp RSHIFT  &none
+&kp CAPS  &kp Z          &kp X                &kp C        &kp V        &kp B  &none              &none       &kp N  &kp M          &none        &none                 &none       &none
+                                                           &kp LGUI     &mo 2  &mt LCTRL SPACE    &kp RETURN  &mo 4  &kp BACKSPACE
             >;
 
             display-name = "En";
@@ -263,10 +263,10 @@
         ru {
             display-name = "Ru";
             bindings = <
-&kp ESC   &kp RU_CYRILLIC_SHORT_I   &kp RU_CYRILLIC_TSE         &kp RU_CYRILLIC_U          &kp RU_CYRILLIC_KA        &kp RU_CYRILLIC_IE                                                   &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE         &kp RU_CYRILLIC_HA
-&kp TAB   &hml LGUI RU_CYRILLIC_EF  &hml LALT RU_CYRILLIC_YERU  &hml LCTRL RU_CYRILLIC_VE  &hml LSHFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                                   &kp RU_CYRILLIC_ER  &hmr RSHFT RU_CYRILLIC_O   &hmr RCTRL RU_CYRILLIC_EL  &hmr RALT RU_CYRILLIC_DE  &hmr RGUI RU_CYRILLIC_ZHE  &none
-&kp CAPS  &kp RU_CYRILLIC_YA        &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I   &kp RU_CYRILLIC_HARD_SIGN    &kp RU_CYRILLIC_IO  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_E          &none
-                                                                                           &kp LGUI                  &mo 3               &mt LCTRL SPACE              &kp RETURN          &mo 4               &kp BACKSPACE
+&kp ESC   &kp RU_CYRILLIC_SHORT_I     &kp RU_CYRILLIC_TSE                 &kp RU_CYRILLIC_U         &kp RU_CYRILLIC_KA       &kp RU_CYRILLIC_IE                                                   &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA       &kp RU_CYRILLIC_SHCHA              &kp RU_CYRILLIC_ZE           &kp RU_CYRILLIC_HA
+&kp TAB   &hml LSHIFT RU_CYRILLIC_EF  &hml LEFT_CONTROL RU_CYRILLIC_YERU  &hml LALT RU_CYRILLIC_VE  &hml LGUI RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                                   &kp RU_CYRILLIC_ER  &hmr RGUI RU_CYRILLIC_O    &hmr RALT RU_CYRILLIC_EL  &hmr RIGHT_CONTROL RU_CYRILLIC_DE  &hmr RSHIFT RU_CYRILLIC_ZHE  &none
+&kp CAPS  &kp RU_CYRILLIC_YA          &kp RU_CYRILLIC_CHE                 &kp RU_CYRILLIC_ES        &kp RU_CYRILLIC_EM       &kp RU_CYRILLIC_I   &kp RU_CYRILLIC_HARD_SIGN    &kp RU_CYRILLIC_IO  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE        &kp RU_CYRILLIC_YU                 &kp RU_CYRILLIC_E            &none
+                                                                                                    &kp LGUI                 &mo 3               &mt LCTRL SPACE              &kp RETURN          &mo 4               &kp BACKSPACE
             >;
         };
 
@@ -293,10 +293,10 @@
 
         nav {
             bindings = <
-&none  &none       &none     &none      &kp PRINTSCREEN  &kp C_BRIGHTNESS_MINIMUM                  &kp C_PLAY_PAUSE  &kp HOME    &kp PG_UP   &kp PAGE_DOWN  &kp END    &none
-&none  &kp LGUI    &kp LALT  &kp LCTRL  &kp LSHFT        &kp C_BRIGHTNESS_INC                      &kp C_VOL_UP      &kp LEFT    &kp UP      &kp DOWN       &kp RIGHT  &none
-&none  &kp C_PREV  &none     &none      &kp C_NEXT       &kp C_BRIGHTNESS_DEC      &none    &none  &kp C_VOL_DN      &kp INSERT  &kp DELETE  &none          &none      &none
-                                        &layer_en        &layer_ru                 &none    &none  &none             &none
+&none  &none       &none  &none  &kp PRINTSCREEN  &kp C_BRIGHTNESS_MINIMUM                  &kp C_PLAY_PAUSE  &kp HOME    &kp PG_UP   &kp PAGE_DOWN  &kp END    &kp C_VOLUME_UP
+&none  &none       &none  &none  &none            &kp C_BRIGHTNESS_INC                      &none             &kp LEFT    &kp UP      &kp DOWN       &kp RIGHT  &kp C_VOLUME_DOWN
+&none  &kp C_PREV  &none  &none  &kp C_NEXT       &kp C_BRIGHTNESS_DEC      &none    &none  &none             &kp INSERT  &kp DELETE  &none          &none      &none
+                                 &layer_en        &layer_ru                 &none    &none  &none             &none
             >;
 
             display-name = "Navigation";
@@ -305,7 +305,7 @@
         adj {
             bindings = <
 &none  &kp F1  &kp F2   &kp F3   &kp F4   &none                        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&none  &kp F5  &kp F6   &kp F7   &kp F8   &none                        &out OUT_BLE  &kp LSHIFT    &kp LCTRL         &kp LALT      &kp LGUI      &studio_unlock
+&none  &kp F5  &kp F6   &kp F7   &kp F8   &none                        &out OUT_BLE  &none         &none             &none         &none         &studio_unlock
 &none  &kp F9  &kp F10  &kp F11  &kp F12  &none  &bootloader    &none  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &none         &none
                                  &none    &none  &none          &none  &none         &none
             >;
