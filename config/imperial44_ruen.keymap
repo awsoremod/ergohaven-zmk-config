@@ -271,7 +271,7 @@
             bindings = <
 &kp ESC   &kp RU_CYRILLIC_SHORT_I     &kp RU_CYRILLIC_TSE                 &kp RU_CYRILLIC_U         &kp RU_CYRILLIC_KA       &kp RU_CYRILLIC_IE                                        &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA       &kp RU_CYRILLIC_SHCHA              &kp RU_CYRILLIC_ZE           &kp RU_CYRILLIC_HA
 &kp TAB   &hml LSHIFT RU_CYRILLIC_EF  &hml LEFT_CONTROL RU_CYRILLIC_YERU  &hml LALT RU_CYRILLIC_VE  &hml LGUI RU_CYRILLIC_A  &kp RU_CYRILLIC_PE                                        &kp RU_CYRILLIC_ER  &hmr RGUI RU_CYRILLIC_O    &hmr RALT RU_CYRILLIC_EL  &hmr RIGHT_CONTROL RU_CYRILLIC_DE  &hmr RSHIFT RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_HARD_SIGN
-&kp CAPS  &kp RU_CYRILLIC_YA          &kp RU_CYRILLIC_CHE                 &kp RU_CYRILLIC_ES        &kp RU_CYRILLIC_EM       &kp RU_CYRILLIC_I   &none                     &none       &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE        &kp RU_CYRILLIC_YU                 &kp RU_CYRILLIC_E            &none
+&kp CAPS  &kp RU_CYRILLIC_YA          &kp RU_CYRILLIC_CHE                 &kp RU_CYRILLIC_ES        &kp RU_CYRILLIC_EM       &kp RU_CYRILLIC_I   &kp ENTER                 &none       &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE        &kp RU_CYRILLIC_YU                 &kp RU_CYRILLIC_E            &none
                                                                                                     &kp LEFT_SHIFT           &mo 3               &mt LEFT_COMMAND SPACE    &kp RETURN  &mo 4               &kp BACKSPACE
             >;
         };
