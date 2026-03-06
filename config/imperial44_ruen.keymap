@@ -265,6 +265,9 @@
             >;
 
             display-name = "Symbols_En";
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp C_BRI_UP C_BRI_DN>;
         };
 
         sym_ru {
@@ -275,6 +278,10 @@
 &none  &none               &en GRAVE    &en TILDE  &en LESS_THAN  &en GREATER_THAN  &none    &none         &kp RU_SLASH  &kp RU_BACKSLASH  &en PIPE         &none         &none        &none
                                                    &mo 5          &none             &none    &kp RU_COMMA  &kp RU_DOT    &kp RU_QUESTION
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp C_BRI_UP C_BRI_DN>;
         };
 
         nav {
@@ -286,9 +293,6 @@
             >;
 
             display-name = "Navigation";
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp C_BRI_UP C_BRI_DN>;
         };
 
         adj {
