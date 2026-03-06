@@ -139,6 +139,42 @@
             key-positions = <1 2>;
             layers = <1 3>;
         };
+
+        slash_eng {
+            bindings = <&kp FSLH>;
+            key-positions = <2 3>;
+            layers = <0 2>;
+        };
+
+        slash_ru {
+            bindings = <&kp RU_SLASH>;
+            key-positions = <2 3>;
+            layers = <1 3>;
+        };
+
+        dq {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <19 20>;
+            layers = <0 2>;
+        };
+
+        dbru {
+            bindings = <&kp RU_DQT>;
+            key-positions = <19 20>;
+            layers = <1 3>;
+        };
+
+        rlowen {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <33 34>;
+            layers = <0 2>;
+        };
+
+        ruunder {
+            bindings = <&kp RU_UNDERSCORE>;
+            key-positions = <33 34>;
+            layers = <1 3>;
+        };
     };
 
     macros {
