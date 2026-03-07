@@ -339,8 +339,8 @@
 
         nav {
             bindings = <
-&kp LEFT_GUI    &none      &none  &none      &none         &none                             &kp HOME        &kp PAGE_DOWN   &kp PG_UP  &kp END          &none  &none
-&kp LEFT_ALT    &kp CAPS   &none  &layer_en  &layer_ru     &none                             &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP     &kp RIGHT_ARROW  &none  &none
+&kp LEFT_GUI    &none      &none  &layer_en  &layer_ru     &none                             &kp HOME        &kp PAGE_DOWN   &kp PG_UP  &kp END          &none  &none
+&kp LEFT_ALT    &kp CAPS   &none  &none      &none         &none                             &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP     &kp RIGHT_ARROW  &none  &none
 &kp LEFT_SHIFT  &kp LCTRL  &none  &none      &none         &none      &none           &none  &kp C_PREV      &kp DELETE      &kp INS    &kp C_NEXT       &none  &kp LEFT_ALT
                                              &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI    &none  &none           &none
             >;
