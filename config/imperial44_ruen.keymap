@@ -52,7 +52,7 @@
 
         r_one {
             bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <16 15>;
+            key-positions = <15 14>;
             layers = <0 2>;
         };
 
@@ -70,7 +70,7 @@
 
         r_t {
             bindings = <&kp SEMI>;
-            key-positions = <4 3>;
+            key-positions = <3 2>;
             layers = <0 2>;
         };
 
@@ -94,13 +94,13 @@
 
         l_r_mi {
             bindings = <&kp RU_MINUS>;
-            key-positions = <28 27>;
+            key-positions = <27 28>;
             layers = <1 3>;
         };
 
         l_r_toddot {
             bindings = <&kp RU_COLON>;
-            key-positions = <7 8>;
+            key-positions = <8 7>;
             layers = <1 3>;
         };
 
@@ -124,13 +124,13 @@
 
         r_ru_to_dot {
             bindings = <&kp RU_SEMICOLON>;
-            key-positions = <4 3>;
+            key-positions = <3 2>;
             layers = <1 3>;
         };
 
         r_ru_sq {
             bindings = <&en SQT>;
-            key-positions = <16 15>;
+            key-positions = <15 14>;
             layers = <1 3>;
         };
 
@@ -142,38 +142,55 @@
 
         slash_eng {
             bindings = <&kp FSLH>;
-            key-positions = <2 3>;
+            key-positions = <14 15 16>;
             layers = <0 2>;
         };
 
         slash_ru {
             bindings = <&kp RU_SLASH>;
-            key-positions = <2 3>;
+            key-positions = <14 15 16>;
             layers = <1 3>;
         };
 
         dq {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <19 20>;
+            key-positions = <20 19>;
             layers = <0 2>;
         };
 
         dbru {
             bindings = <&kp RU_DQT>;
-            key-positions = <19 20>;
+            key-positions = <20 19>;
             layers = <1 3>;
         };
 
         rlowen {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <33 34>;
+            key-positions = <34 33>;
             layers = <0 2>;
         };
 
         ruunder {
             bindings = <&kp RU_UNDERSCORE>;
-            key-positions = <33 34>;
+            key-positions = <34 33>;
             layers = <1 3>;
+        };
+
+        enter_end_eng {
+            bindings = <&kp ENTER>;
+            key-positions = <16 15>;
+            layers = <0 1 2 3>;
+        };
+
+        tg_language {
+            bindings = <&layer_ru>;
+            key-positions = <4 3>;
+            layers = <0 2>;
+        };
+
+        tg_eng {
+            bindings = <&layer_en>;
+            key-positions = <4 3>;
         };
     };
 
@@ -266,10 +283,10 @@
 
         en {
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E  &kp R                   &kp T                                              &kp Y  &kp U             &kp I  &kp O  &none  &none
-&kp TAB    &kp A  &kp S  &kp D  &kp F                   &kp G                                              &kp H  &kp J             &kp K  &kp L  &kp P  &none
-&kp LSHFT  &kp Z  &kp X  &kp C  &kp V                   &kp B  &kp ENTER                 &kp C_PLAY_PAUSE  &kp N  &kp M             &none  &none  &none  &kp LEFT_ALT
-                                &mt LEFT_ALT BACKSPACE  &mo 2  &mt LEFT_COMMAND SPACE    &kp LEFT_SHIFT    &mo 4  &kp LEFT_CONTROL
+&mt LEFT_GUI ESC  &kp Q  &kp W  &kp E  &kp R                   &kp T                                              &kp Y  &kp U             &kp I  &kp O  &none  &none
+&mt LEFT_ALT TAB  &kp A  &kp S  &kp D  &kp F                   &kp G                                              &kp H  &kp J             &kp K  &kp L  &kp P  &none
+&kp LSHFT         &kp Z  &kp X  &kp C  &kp V                   &kp B  &none                     &kp C_PLAY_PAUSE  &kp N  &kp M             &none  &none  &none  &kp LEFT_ALT
+                                       &mt LEFT_ALT BACKSPACE  &mo 2  &mt LEFT_COMMAND SPACE    &kp LEFT_SHIFT    &mo 4  &kp LEFT_CONTROL
             >;
 
             display-name = "En";
@@ -281,10 +298,10 @@
         ru {
             display-name = "Ru";
             bindings = <
-&kp ESC    &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA      &kp RU_CYRILLIC_IE                                              &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_HA
-&kp TAB    &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A       &kp RU_CYRILLIC_PE                                              &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_HARD_SIGN
-&kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM      &kp RU_CYRILLIC_I   &kp ENTER                 &kp C_PLAY_PAUSE  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_E    &kp LEFT_ALT
-                                                                              &mt LEFT_ALT BACKSPACE  &mo 3               &mt LEFT_COMMAND SPACE    &kp LEFT_SHIFT    &mo 4               &kp LCTRL
+&mt LEFT_GUI ESC  &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE   &kp RU_CYRILLIC_U   &kp RU_CYRILLIC_KA      &kp RU_CYRILLIC_IE                                              &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZE   &kp RU_CYRILLIC_HA
+&mt LEFT_ALT TAB  &kp RU_CYRILLIC_EF       &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_A       &kp RU_CYRILLIC_PE                                              &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O          &kp RU_CYRILLIC_EL   &kp RU_CYRILLIC_DE     &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_HARD_SIGN
+&kp LSHFT         &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM      &kp RU_CYRILLIC_I   &none                     &kp C_PLAY_PAUSE  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_CYRILLIC_E    &kp LEFT_ALT
+                                                                                     &mt LEFT_ALT BACKSPACE  &mo 3               &mt LEFT_COMMAND SPACE    &kp LEFT_SHIFT    &mo 4               &kp LCTRL
             >;
 
             sensor-bindings =
@@ -294,10 +311,10 @@
 
         sym_en {
             bindings = <
-&none           &kp N1        &kp N2       &kp N3     &kp N4         &kp N5                                &kp N6     &kp N7         &kp N8     &kp N9     &kp N0    &none
-&kp LEFT_GUI    &kp EXCL      &kp AT_SIGN  &kp POUND  &kp DOLLAR     &kp PERCENT                           &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp EQUAL  &kp PLUS  &none
-&kp LEFT_SHIFT  &kp LEFT_ALT  &kp GRAVE    &kp TILDE  &kp LESS_THAN  &kp GREATER_THAN  &none    &none      &kp FSLH   &kp BSLH       &kp PIPE   &none      &none     &kp LEFT_ALT
-                                                      &mo 5          &none             &none    &kp COMMA  &kp DOT    &kp QUESTION
+&kp LEFT_GUI    &kp N1     &kp N2       &kp N3     &kp N4         &kp N5                                &kp N6     &kp N7         &kp N8     &kp N9     &kp N0    &none
+&kp LALT        &kp EXCL   &kp AT_SIGN  &kp POUND  &kp DOLLAR     &kp PERCENT                           &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp EQUAL  &kp PLUS  &none
+&kp LEFT_SHIFT  &kp LCTRL  &kp GRAVE    &kp TILDE  &kp LESS_THAN  &kp GREATER_THAN  &none    &none      &kp FSLH   &kp BSLH       &kp PIPE   &none      &none     &kp LEFT_ALT
+                                                   &mo 5          &none             &none    &kp COMMA  &kp DOT    &kp QUESTION
             >;
 
             display-name = "Symbols_En";
@@ -309,9 +326,9 @@
         sym_ru {
             display-name = "Symbols_Ru";
             bindings = <
-&none         &kp N1              &kp N2       &kp N3     &kp N4         &kp N5                                   &kp N6        &kp N7            &kp N8           &kp N9        &kp N0       &none
-&kp LEFT_GUI  &kp RU_EXCLAMATION  &en AT_SIGN  &en HASH   &en DOLLAR     &kp RU_PERCENT                           &en CARET     &en AMPERSAND     &kp RU_ASTERISK  &kp RU_EQUAL  &kp RU_PLUS  &none
-&kp LSHIFT    &kp LEFT_ALT        &en GRAVE    &en TILDE  &en LESS_THAN  &en GREATER_THAN  &none    &none         &kp RU_SLASH  &kp RU_BACKSLASH  &en PIPE         &none         &none        &kp LEFT_ALT
+&kp LEFT_GUI  &kp N1              &kp N2       &kp N3     &kp N4         &kp N5                                   &kp N6        &kp N7            &kp N8           &kp N9        &kp N0       &none
+&kp LEFT_ALT  &kp RU_EXCLAMATION  &en AT_SIGN  &en HASH   &en DOLLAR     &kp RU_PERCENT                           &en CARET     &en AMPERSAND     &kp RU_ASTERISK  &kp RU_EQUAL  &kp RU_PLUS  &none
+&kp LSHIFT    &kp LCTRL           &en GRAVE    &en TILDE  &en LESS_THAN  &en GREATER_THAN  &none    &none         &kp RU_SLASH  &kp RU_BACKSLASH  &en PIPE         &none         &none        &kp LEFT_ALT
                                                           &mo 5          &none             &none    &kp RU_COMMA  &kp RU_DOT    &kp RU_QUESTION
             >;
 
@@ -322,10 +339,10 @@
 
         nav {
             bindings = <
-&none           &none         &none  &none      &none         &none                             &kp HOME        &kp PAGE_DOWN   &kp PG_UP  &kp END          &none  &none
-&kp CAPSLOCK    &none         &none  &layer_en  &layer_ru     &none                             &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP     &kp RIGHT_ARROW  &none  &none
-&kp LEFT_SHIFT  &kp LEFT_ALT  &none  &none      &none         &none      &none           &none  &kp C_PREV      &kp DELETE      &kp INS    &kp C_NEXT       &none  &kp LEFT_ALT
-                                                &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI    &none  &none           &none
+&kp LEFT_GUI    &none      &none  &none      &none         &none                             &kp HOME        &kp PAGE_DOWN   &kp PG_UP  &kp END          &none  &none
+&kp LEFT_ALT    &kp CAPS   &none  &layer_en  &layer_ru     &none                             &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP     &kp RIGHT_ARROW  &none  &none
+&kp LEFT_SHIFT  &kp LCTRL  &none  &none      &none         &none      &none           &none  &kp C_PREV      &kp DELETE      &kp INS    &kp C_NEXT       &none  &kp LEFT_ALT
+                                             &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI    &none  &none           &none
             >;
 
             display-name = "Navigation";
