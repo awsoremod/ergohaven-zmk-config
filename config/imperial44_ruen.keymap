@@ -180,17 +180,20 @@
             bindings = <&kp ENTER>;
             key-positions = <16 15>;
             layers = <0 1 2 3>;
+            require-prior-idle-ms = <300>;
         };
 
         tg_language {
             bindings = <&layer_ru>;
             key-positions = <4 3>;
             layers = <0 2>;
+            require-prior-idle-ms = <300>;
         };
 
         tg_eng {
             bindings = <&layer_en>;
             key-positions = <4 3>;
+            require-prior-idle-ms = <300>;
         };
 
         z_ru {
